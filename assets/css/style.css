@@ -163,7 +163,7 @@ span {
 }
 
 
-.contact:hover {
+ .contact:hover {
     background-color: var(--secondary-black);
     color: #fff;
 }
@@ -187,7 +187,7 @@ span {
     z-index: -1;
 }
 
-
+/* ^services styles */
 .services .fa {
     width: 75px;
     height: 75px;
@@ -240,6 +240,9 @@ span {
 
 }
 
+
+
+/* ^portfolio  */
 .portfolio .fa {
     width: 30px;
     height: 30px;
@@ -273,7 +276,14 @@ span {
     width: 100px;
 
 
+
+
+
+    
 }
+
+
+/* ^teams  */
 
 .our-teams footer {
     background-color: #5b5b5b;
@@ -345,6 +355,11 @@ span {
 }
 
 
+
+
+
+
+/* ^contacts styles */
 .contacts .fa {
     width: 50px;
     height: 50px;
@@ -369,7 +384,17 @@ input {
 
 input,
 textarea {
-    background-color: var(--section-bg) !important;
+    background-color: #f4f4f4 !important;
+    border: 0px;
+    width: 100%;
+    padding: 10px !important;
+
+}
+
+input:focus,
+textarea:focus {
+    border: none !important;
+    outline: none;
 }
 
 form .btn {
@@ -381,6 +406,9 @@ form .btn {
         border: 1px solid black;
     }
 }
+
+
+
 
 footer {
     background-color: var(--secondary-black);
