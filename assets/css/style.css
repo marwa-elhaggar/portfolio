@@ -1,0 +1,422 @@
+:root {
+    --main-black: #343434;
+    --secondary-black: #1C1C1C;
+    --text-color: #748182;
+    --section-bg: rgb(247, 247, 247);
+
+}
+
+
+
+
+
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bg-gray {
+    background-color: var(--section-bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+    font-family: "Montserrat", sans-serif !important;
+}
+
+nav {
+    transition: all .5s;
+}
+
+.navbar .container {
+    padding-inline: 80px !important;
+}
+
+.nav-item {
+    padding-right: 25px;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.692)), url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+}
+
+header .navbar-brand,
+header .nav-link {
+    color: #fff !important;
+    font-size: 14px;
+    position: relative;
+}
+
+
+.navbar-brand {
+    font-weight: 800 !important;
+}
+
+
+
+/* ^ header section styles  */
+.header-section .container {
+    margin-top: 180px;
+}
+
+
+.header-section .container h2 {
+    font-size: 50px !important;
+}
+
+.header-section .container h1 {
+    font-size: 60px;
+}
+
+
+
+.header-section .container ul li {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 5px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+
+
+main p,
+span {
+    color: var(--text-color)
+}
+
+/* ^ about styles */
+
+
+
+.about-section h2 {
+    font-weight: 800 !important;
+}
+
+.progress-bar {
+    background-color: var(--secondary-black) !important;
+    color: #fff !important;
+
+}
+
+.progress {
+    margin-bottom: 30px;
+}
+
+
+.dotted {
+    background-image: url("../images/dots.png");
+    background-repeat: repeat;
+    transform: translate(100px, 100px);
+    height: 100%;
+}
+
+.about-section .container .about-image::after {
+    content: " ";
+    background-image: url("../images/dots.png");
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    bottom: -30px;
+    left: -15px;
+    z-index: -1;
+}
+
+.progress {
+    height: 25px;
+    background-color: #f7f7f7;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+
+
+.btn {
+    padding: 10px 30px;
+    border: 1px solid var(--secondary-black);
+    transition: all .8s;
+    font-size: small;
+    width: fit-content;
+    text-wrap: nowrap;
+}
+
+.download {
+    background-color: var(--secondary-black);
+    color: #fff;
+
+    &:hover {
+        border: 1px solid var(--secondary-black);
+    }
+}
+
+
+.contact:hover {
+    background-color: var(--secondary-black);
+    color: #fff;
+}
+
+
+.title h2 {
+
+    font-weight: 900;
+
+}
+
+.title h2::after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/dots.png");
+    background-repeat: repeat;
+    width: 20%;
+    height: 70%;
+    left: 40%;
+    bottom: -10px;
+    z-index: -1;
+}
+
+
+.services .fa {
+    width: 75px;
+    height: 75px;
+    background-color: var(--section-bg);
+    transition: all .5s;
+
+
+}
+
+.services .inner {
+    line-height: 30px;
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+}
+
+.services h6 {
+
+    font-weight: 800 !important;
+}
+
+.services .fa:hover {
+    background-color: var(--secondary-black);
+    color: #fff;
+
+}
+
+
+.overlay {
+    transition: all .5s;
+    width: 95%;
+    height: 97%;
+    left: 10px;
+    top: 20px;
+    position: absolute;
+    opacity: 0;
+}
+
+.inner:hover {
+    transition: all .5s;
+
+    .overlay {
+
+        width: 95%;
+        height: 95%;
+        top: 8px;
+        left: 10px;
+        opacity: 1;
+
+        position: absolute;
+    }
+
+}
+
+.portfolio .fa {
+    width: 30px;
+    height: 30px;
+    background-color: var(--secondary-black);
+    color: #fff;
+    transition: all .5s;
+
+
+}
+
+.portfolio .fa:hover {
+    background-color: #fff;
+    color: var(--secondary-black);
+    border: 1px solid black;
+}
+
+.carousel-indicators button {
+
+    height: 10px !important;
+    width: 10px !important;
+
+
+
+
+
+
+}
+
+.carousel-item img {
+
+    width: 100px;
+
+
+}
+
+.our-teams footer {
+    background-color: #5b5b5b;
+}
+
+
+
+.our-teams img {
+    transition: all .5s;
+}
+
+.our-teams .inner:hover {
+    img {
+        transform: scale(1.09);
+    }
+
+    .layer div {
+        translate: 0px 0px 1px;
+        transform: rotateY(360deg);
+        opacity: 1;
+
+
+    }
+}
+
+
+.layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    perspective: 500px;
+
+
+}
+
+
+.layer div {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffb0;
+    translate: 0px 0px -500px;
+    transform: rotateY(180deg);
+    opacity: 0;
+    transition: all .5s;
+
+}
+
+
+
+.layer .fa {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background-color: var(--secondary-black);
+    color: #fff;
+    border-radius: 50%;
+    padding-top: 10px;
+    transition: all .5s;
+
+}
+
+.layer .fa:hover {
+    background-color: #fff;
+    color: var(--secondary-black);
+    border: 1px solid black;
+}
+
+
+.contacts .fa {
+    width: 50px;
+    height: 50px;
+    background-color: var(--section-bg);
+    font-size: 30px;
+    border-radius: 50%;
+    padding-top: 10px;
+    transition: all .5s;
+
+}
+
+.contacts .fa:hover {
+    background-color: var(--secondary-black);
+    color: #fff;
+
+}
+
+input {
+    border: none;
+
+}
+
+input,
+textarea {
+    background-color: var(--section-bg) !important;
+}
+
+form .btn {
+    background-color: var(--secondary-black);
+    color: #fff;
+    margin-top: 10px;
+
+    &:hover {
+        border: 1px solid black;
+    }
+}
+
+footer {
+    background-color: var(--secondary-black);
+    padding: 30px;
+
+}
+
+
+
+body:not(:has(a[href="#home"].active)) nav {
+    position: fixed !important;
+    background-color: #fff;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 2;
+    padding: .625rem !important;
+
+    .nav-link,
+    .navbar-brand {
+        color: var(--secondary-black) !important;
+    }
+
+    .container {
+        padding: 10px !important;
+    }
+
+    .active:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -3px;
+        left: 0px;
+        background-color: var(--secondary-black);
+
+    }
+
+}
